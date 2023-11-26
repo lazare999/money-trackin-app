@@ -1,0 +1,28 @@
+.container {
+    background-color: #45a049;
+    padding: 1em;
+    width: 100%;
+    display: flex;
+    text-align: left;
+    justify-content: space-around;
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center; */
+}
+
+.category {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: inherit;
+}
+
+.container h2 {
+    color: #fff;
+    font-weight: bold;
+}
+
+.img {
+ /* text-align: left; */
+    width: 2.5em;
+}

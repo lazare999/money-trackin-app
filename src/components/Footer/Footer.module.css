@@ -1,0 +1,39 @@
+.headerContainer {
+    background-image: url('../../images/background-photo.jpg');
+    /* background-size: cover;
+    background-repeat: no-repeat; */
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    color: #45a049;
+}
+
+.footerHeader {
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2vh;
+    margin: 4vh;
+    /* order: 2; */
+    /* flex: 1; */
+    text-align: center;
+    width: fit-content;
+}
+
+.footerAuthor {
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2vh;
+    margin: 4vh;
+    /* order: 2; */
+    /* flex: 1; */
+    text-align: center;
+    width: fit-content;
+}
+
+.footerLink {
+    text-decoration: underline;
+    font-weight: bold;
+}

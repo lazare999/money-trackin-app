@@ -1,0 +1,473 @@
+{
+    "users": {
+        "UuEYpgflYuMKaKxtXc6KjudWq082": {
+        "id": "UuEYpgflYuMKaKxtXc6KjudWq082",
+        "username": "lazare",
+        "email": "lazare@gmail.com",
+        "transactions": {
+          "shoping": {
+            "transaction1": {
+              "description": "Grocery shopping",
+              "amount": 99.99,
+              "date": "2023-10-22"
+            },
+            "transaction2": {
+              "description": "Clothing shopping",
+              "amount": 45.75,
+              "date": "2023-10-20"
+            },
+            "transaction3": {
+              "description": "Electronics",
+              "amount": 219.50,
+              "date": "2023-10-18"
+            },
+            "transaction4": {
+              "description": "Dining out",
+              "amount": 74.25,
+              "date": "2023-10-16"
+            }
+          },
+          "fun": {
+            "transaction1": {
+              "description": "Movie night",
+              "amount": 29.99,
+              "date": "2023-10-24"
+            },
+            "transaction2": {
+              "description": "Amusement park",
+              "amount": 89.50,
+              "date": "2023-10-22"
+            },
+            "transaction3": {
+              "description": "Concert tickets",
+              "amount": 61.75,
+              "date": "2023-10-20"
+            },
+            "transaction4": {
+              "description": "Weekend getaway",
+              "amount": 299.99,
+              "date": "2023-10-18"
+            }
+          },
+          "cash_out": {
+            "transaction1": {
+              "description": "ATM withdrawal",
+              "amount": 49.50,
+              "date": "2023-10-30"
+            },
+            "transaction2": {
+              "description": "Cash for groceries",
+              "amount": 85.25,
+              "date": "2023-10-28"
+            },
+            "transaction3": {
+              "description": "Shopping spree",
+              "amount": 199.99,
+              "date": "2023-10-26"
+            },
+            "transaction4": {
+              "description": "Dining out",
+              "amount": 47.75,
+              "date": "2023-10-24"
+            }
+          },
+          "tax": {
+            "transaction1": {
+              "description": "Income tax payment",
+              "amount": 249.50,
+              "date": "2023-10-22"
+            },
+            "transaction2": {
+              "description": "Property tax",
+              "amount": 149.75,
+              "date": "2023-10-20"
+            },
+            "transaction3": {
+              "description": "Sales tax",
+              "amount": 34.99,
+              "date": "2023-10-18"
+            },
+            "transaction4": {
+              "description": "Tax refund",
+              "amount": 119.50,
+              "date": "2023-10-16"
+            }
+          },
+          "other": {
+            "transaction1": {
+              "description": "Car maintenance",
+              "amount": 199.75,
+              "date": "2023-10-24"
+            },
+            "transaction2": {
+              "description": "Donation to charity",
+              "amount": 74.99,
+              "date": "2023-10-22"
+            },
+            "transaction3": {
+              "description": "Home improvement",
+              "amount": 349.50,
+              "date": "2023-10-20"
+            },
+            "transaction4": {
+              "description": "Online subscription",
+              "amount": 12.49,
+              "date": "2023-10-18"
+            }
+          }
+        }
+      },
+      "E1f4RMm74oPmt15Jltuzv1fQxyr1": {
+        "id": "E1f4RMm74oPmt15Jltuzv1fQxyr1",
+        "username": "saba",
+        "email": "saba@gmail.com",
+        "transactions": {
+          "shoping": {
+            "transaction1": {
+              "description": "Grocery shopping",
+              "amount": 86.50,
+              "date": "2023-10-21"
+            },
+            "transaction2": {
+              "description": "Clothing shopping",
+              "amount": 60.99,
+              "date": "2023-10-19"
+            },
+            "transaction3": {
+              "description": "Electronics",
+              "amount": 279.75,
+              "date": "2023-10-17"
+            },
+            "transaction4": {
+              "description": "Dining out",
+              "amount": 66.25,
+              "date": "2023-10-15"
+            }
+          },
+          "fun": {
+            "transaction1": {
+              "description": "Movie night",
+              "amount": 21.50,
+              "date": "2023-10-23"
+            },
+            "transaction2": {
+              "description": "Amusement park",
+              "amount": 110.99,
+              "date": "2023-10-21"
+            },
+            "transaction3": {
+              "description": "Concert tickets",
+              "amount": 69.75,
+              "date": "2023-10-19"
+            },
+            "transaction4": {
+              "description": "Weekend getaway",
+              "amount": 399.50,
+              "date": "2023-10-17"
+            }
+          },
+          "cash_out": {
+            "transaction1": {
+              "description": "ATM withdrawal",
+              "amount": 46.50,
+              "date": "2023-10-25"
+            },
+            "transaction2": {
+              "description": "Cash for groceries",
+              "amount": 89.99,
+              "date": "2023-10-23"
+            },
+            "transaction3": {
+              "description": "Shopping spree",
+              "amount": 221.75,
+              "date": "2023-10-21"
+            },
+            "transaction4": {
+              "description": "Dining out",
+              "amount": 36.25,
+              "date": "2023-10-19"
+            }
+          },
+          "tax": {
+            "transaction1": {
+              "description": "Income tax payment",
+              "amount": 221.50,
+              "date": "2023-10-27"
+            },
+            "transaction2": {
+              "description": "Property tax",
+              "amount": 99.99,
+              "date": "2023-10-25"
+            },
+            "transaction3": {
+              "description": "Sales tax",
+              "amount": 44.75,
+              "date": "2023-10-23"
+            },
+            "transaction4": {
+              "description": "Tax refund",
+              "amount": 181.50,
+              "date": "2023-10-21"
+            }
+          },
+          "other": {
+            "transaction1": {
+              "description": "Car maintenance",
+              "amount": 179.75,
+              "date": "2023-10-20"
+            },
+            "transaction2": {
+              "description": "Donation to charity",
+              "amount": 54.50,
+              "date": "2023-10-18"
+            },
+            "transaction3": {
+              "description": "Home improvement",
+              "amount": 321.99,
+              "date": "2023-10-16"
+            },
+            "transaction4": {
+              "description": "Online subscription",
+              "amount": 16.25,
+              "date": "2023-10-14"
+            }
+          }
+        }
+      },
+      "2u2K9JhoMLSgjY4oskCKy1KExzi2": {
+        "id": "2u2K9JhoMLSgjY4oskCKy1KExzi2",
+        "username": "aleko",
+        "email": "aleko@gmail.com",
+        "transactions": {
+          "shoping": {
+            "transaction1": {
+              "description": "Grocery shopping",
+              "amount": 86.50,
+              "date": "2023-10-21"
+            },
+            "transaction2": {
+              "description": "Clothing shopping",
+              "amount": 60.99,
+              "date": "2023-10-19"
+            },
+            "transaction3": {
+              "description": "Electronics",
+              "amount": 279.75,
+              "date": "2023-10-17"
+            },
+            "transaction4": {
+              "description": "Dining out",
+              "amount": 66.25,
+              "date": "2023-10-15"
+            }
+          },
+          "fun": {
+            "transaction1": {
+              "description": "Movie night",
+              "amount": 21.50,
+              "date": "2023-10-23"
+            },
+            "transaction2": {
+              "description": "Amusement park",
+              "amount": 110.99,
+              "date": "2023-10-21"
+            },
+            "transaction3": {
+              "description": "Concert tickets",
+              "amount": 69.75,
+              "date": "2023-10-19"
+            },
+            "transaction4": {
+              "description": "Weekend getaway",
+              "amount": 399.50,
+              "date": "2023-10-17"
+            }
+          },
+          "cash_out": {
+            "transaction1": {
+              "description": "ATM withdrawal",
+              "amount": 46.50,
+              "date": "2023-10-25"
+            },
+            "transaction2": {
+              "description": "Cash for groceries",
+              "amount": 89.99,
+              "date": "2023-10-23"
+            },
+            "transaction3": {
+              "description": "Shopping spree",
+              "amount": 221.75,
+              "date": "2023-10-21"
+            },
+            "transaction4": {
+              "description": "Dining out",
+              "amount": 36.25,
+              "date": "2023-10-19"
+            }
+          },
+          "tax": {
+            "transaction1": {
+              "description": "Income tax payment",
+              "amount": 221.50,
+              "date": "2023-10-27"
+            },
+            "transaction2": {
+              "description": "Property tax",
+              "amount": 99.99,
+              "date": "2023-10-25"
+            },
+            "transaction3": {
+              "description": "Sales tax",
+              "amount": 44.75,
+              "date": "2023-10-23"
+            },
+            "transaction4": {
+              "description": "Tax refund",
+              "amount": 181.50,
+              "date": "2023-10-21"
+            }
+          },
+          "other": {
+            "transaction1": {
+              "description": "Car maintenance",
+              "amount": 179.75,
+              "date": "2023-10-20"
+            },
+            "transaction2": {
+              "description": "Donation to charity",
+              "amount": 54.50,
+              "date": "2023-10-18"
+            },
+            "transaction3": {
+              "description": "Home improvement",
+              "amount": 321.99,
+              "date": "2023-10-16"
+            },
+            "transaction4": {
+              "description": "Online subscription",
+              "amount": 16.25,
+              "date": "2023-10-14"
+            }
+          }
+        }
+      },
+      "08pLuO0QhYWAkelZoE9s12rxOqx2": {
+        "id": "08pLuO0QhYWAkelZoE9s12rxOqx2",
+        "username": "tsotne",
+        "email": "tsotne@gmail.com",
+        "transactions": {
+          "shoping": {
+            "transaction1": {
+              "description": "Grocery shopping",
+              "amount": 86.50,
+              "date": "2023-10-21"
+            },
+            "transaction2": {
+              "description": "Clothing shopping",
+              "amount": 60.99,
+              "date": "2023-10-19"
+            },
+            "transaction3": {
+              "description": "Electronics",
+              "amount": 279.75,
+              "date": "2023-10-17"
+            },
+            "transaction4": {
+              "description": "Dining out",
+              "amount": 66.25,
+              "date": "2023-10-15"
+            }
+          },
+          "fun": {
+            "transaction1": {
+              "description": "Movie night",
+              "amount": 21.50,
+              "date": "2023-10-23"
+            },
+            "transaction2": {
+              "description": "Amusement park",
+              "amount": 110.99,
+              "date": "2023-10-21"
+            },
+            "transaction3": {
+              "description": "Concert tickets",
+              "amount": 69.75,
+              "date": "2023-10-19"
+            },
+            "transaction4": {
+              "description": "Weekend getaway",
+              "amount": 399.50,
+              "date": "2023-10-17"
+            }
+          },
+          "cash_out": {
+            "transaction1": {
+              "description": "ATM withdrawal",
+              "amount": 46.50,
+              "date": "2023-10-25"
+            },
+            "transaction2": {
+              "description": "Cash for groceries",
+              "amount": 89.99,
+              "date": "2023-10-23"
+            },
+            "transaction3": {
+              "description": "Shopping spree",
+              "amount": 221.75,
+              "date": "2023-10-21"
+            },
+            "transaction4": {
+              "description": "Dining out",
+              "amount": 36.25,
+              "date": "2023-10-19"
+            }
+          },
+          "tax": {
+            "transaction1": {
+              "description": "Income tax payment",
+              "amount": 221.50,
+              "date": "2023-10-27"
+            },
+            "transaction2": {
+              "description": "Property tax",
+              "amount": 99.99,
+              "date": "2023-10-25"
+            },
+            "transaction3": {
+              "description": "Sales tax",
+              "amount": 44.75,
+              "date": "2023-10-23"
+            },
+            "transaction4": {
+              "description": "Tax refund",
+              "amount": 181.50,
+              "date": "2023-10-21"
+            }
+          },
+          "other": {
+            "transaction1": {
+              "description": "Car maintenance",
+              "amount": 179.75,
+              "date": "2023-10-20"
+            },
+            "transaction2": {
+              "description": "Donation to charity",
+              "amount": 54.50,
+              "date": "2023-10-18"
+            },
+            "transaction3": {
+              "description": "Home improvement",
+              "amount": 321.99,
+              "date": "2023-10-16"
+            },
+            "transaction4": {
+              "description": "Online subscription",
+              "amount": 16.25,
+              "date": "2023-10-14"
+            }
+          }
+        }
+      }
+    }
+  }
+  

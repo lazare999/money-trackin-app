@@ -1,11 +1,12 @@
 import React from 'react'
-import { useSearchParams } from 'react-router-dom';
+import { useSearchParams, redirect } from 'react-router-dom';
 
 import dollarSign from '../../images/dollar-sign.png';
-import SingIn from '../Auth/SignIn/Index.js';
-import SingUp from '../Auth/SignUp/Index.js';
+import SingIn from '../../components/Auth/SignIn/Index';
+import SingUp from '../../components/Auth/SignUp/Index';
 
 import classes from './HomePage.module.css';
+import Main from '../Main/Index';
 
 const HomePage = () => {
   const [searchParams] = useSearchParams();
@@ -17,10 +18,19 @@ const HomePage = () => {
         <h1 className={classes.homePageHeader}>
           Money Tracking App <img src={dollarSign} alt="dollar-sign" className={classes.img} />
         </h1>
-        { isLogin ? <SingIn /> : <SingUp /> }
+        {isLogin ? <SingIn /> : <SingUp />}
       </div>
     </div>
   )
 }
 
 export default HomePage;
+
+export const checkAuthLoader = () => {
+  const token = localStorage.getItem("token");
+  if (!token) {
+    return redirect('/')
+  } else {
+    return <Main />
+  }
+}

@@ -1,4 +1,4 @@
-import React, { useState }  from 'react';
+import React, {  useState }  from 'react';
 import { Link, useSearchParams, useNavigate } from 'react-router-dom';
 import { useForm } from "react-hook-form";
 import { auth } from '../../../firebase';
@@ -23,19 +23,38 @@ const SingIn = () => {
     const { register, handleSubmit, formState: { errors } } = useForm({
         resolver: yupResolver(schema),
     });
-
+  
     const signInHandler = async (email, password) => {
         try {
             const response = await signInWithEmailAndPassword(auth, email, password)
-            const userId = response._tokenResponse.localId;
-            const userName = response._tokenResponse.displayName;
-            console.log(response);
-            console.log(userId)
+            console.log(response)
             const token = response.user.accessToken;
+            const userId = response._tokenResponse.localId;
+            const userName = response.user.displayName;
             localStorage.setItem("token", token);
-            localStorage.setItem("userName", userName);
             localStorage.setItem("userId", userId);
-            navigate('/test')
+            localStorage.setItem("userName", userName);
+            navigate('/main');
+            // const postData = {
+            //     userId: userId,
+            //     userName: userName,
+            //     email: email,
+            //     transactions: [],
+            // }
+            // const dataFetching = await fetch(
+            //     "https://money-tracking-app-d30a3-default-rtdb.firebaseio.com/users.json",
+            //     {
+            //       method: "POST",
+            //       body: JSON.stringify(postData),
+            //       headers: {
+            //         "Content-Type": "application/json",
+            //       },
+            //     }
+            //   );
+        
+            //   if (!dataFetching.ok) {
+            //     throw new Error("Failed to store user data.");
+            //   }
         } catch (error) {
             if (
                 error.code === "auth/invalid-email" ||
@@ -60,6 +79,10 @@ const SingIn = () => {
         const { email, password } = data;
         signInHandler(email, password);
     };
+
+    // const userNameForDb = localStorage.getItem("userName")
+    
+
 
     return (
         <div className={classes.signInForm}>

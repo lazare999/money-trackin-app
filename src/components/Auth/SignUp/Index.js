@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import { Link, useSearchParams } from 'react-router-dom';
+import { Link, useSearchParams, useNavigate } from 'react-router-dom';
 import { useForm } from "react-hook-form";
 import { auth } from '../../../firebase';
 import { createUserWithEmailAndPassword, updateProfile } from 'firebase/auth';
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from 'yup';
+import { getDatabase, ref, set } from "firebase/database";
 
 import classes from './SingUp.module.css'
 
@@ -17,20 +18,39 @@ const schema = yup.object().shape({
 const SingUp = () => {
     const [searchParams] = useSearchParams();
     const isLogin = searchParams.get('mode') === 'signup';
-
+    const navigate = useNavigate();
     const [errorMessage, setErrorMessage] = useState("");
 
     const { register, handleSubmit, formState: { errors } } = useForm({
         resolver: yupResolver(schema),
     });
 
-    const signUnHandler =async (name, email, password) => {
+    const signUnHandler = async (name, email, password) => {
         try {
             const response = await createUserWithEmailAndPassword(auth, email, password)
             console.log(response);
-            updateProfile(response.user, {
+
+            await updateProfile(response.user, {
                 displayName: name,
             })
+
+            const token = response.user.accessToken;
+            const userId = response._tokenResponse.localId;
+            const userName = response.user.displayName;
+            localStorage.setItem("token", token);
+            localStorage.setItem("userId", userId);
+            localStorage.setItem("userName", userName);
+
+            const db = getDatabase();
+            const postData = {
+                userId: userId,
+                userName: userName,
+                email: email,
+                transactions: [],
+            };
+            set(ref(db, 'users/' + userId), postData);
+
+            navigate('/main');
         } catch (error) {
             if (
                 error.code === "auth/invalid-email" ||
@@ -62,11 +82,11 @@ const SingUp = () => {
                     <h1 className={classes.logInHeader}>SIgn Up</h1>
                 </div>
                 <div className={classes.formContainer}>
-                    <label>Name <p className={classes.errorMessage}>{errors.name?.message}</p></label>
+                    <label htmlFor='name'>Name <p className={classes.errorMessage}>{errors.name?.message}</p></label>
                     <input type='text' name='name' placeholder='Enter your name'  {...register('name')}></input>
-                    <label>Email <p className={classes.errorMessage}>{errors.email?.message}</p></label>
+                    <label htmlFor='email'>Email <p className={classes.errorMessage}>{errors.email?.message}</p></label>
                     <input type='email' name='email' placeholder='Enter your email'  {...register('email')}></input>
-                    <label>Password <p className={classes.errorMessage}>{errors.password?.message}</p></label>
+                    <label htmlFor='password'>Password <p className={classes.errorMessage}>{errors.password?.message}</p></label>
                     <input type='password' name='password' placeholder='Enter your password' {...register('password')}></input>
                 </div>
                 <br />
