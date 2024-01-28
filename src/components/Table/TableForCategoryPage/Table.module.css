@@ -22,9 +22,20 @@
     font-weight: bold;
 }
 
+
 .contentTable th, 
 .contentTable td {
     padding: 12px 15px;
+    
+}
+
+.testDiv {
+    display: flex;
+}
+
+.contentTable th.thForIcons {
+    flex: 0 0 120px;
+
 }
 
 .contentTable tbody tr {
@@ -42,4 +53,5 @@
 .icons {
     width: 30px;
     height: 30px;
+    margin-right: 0.5em;
 }

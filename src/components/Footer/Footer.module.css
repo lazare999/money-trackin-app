@@ -1,5 +1,5 @@
 .headerContainer {
-    background-image: url('../../images/background-photo.jpg');
+    background-image: url('../../../public/images/background-photo.jpg');
     /* background-size: cover;
     background-repeat: no-repeat; */
     background-attachment: fixed;
@@ -8,6 +8,22 @@
     justify-content: space-around;
     color: #45a049;
 }
+
+.mainPageFooter {
+    background-image: url('../../../public/images/background-photo.jpg');
+    /* background-size: cover;
+    background-repeat: no-repeat; */
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    color: #45a049;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
 
 .footerHeader {
     background-color: rgb(255, 255, 255);

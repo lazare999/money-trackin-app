@@ -3,7 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import Select from 'react-select';
 // import 'react-select/dist/react-select.css';
 
-import goBack from '../../../images/arrow.png'
+// import goBack from '../../../images/arrow.png'
 
 import classes from './CategoryHeader.module.css'
 
@@ -32,14 +32,14 @@ const CategoryHeader = () => {
   };
 
 const prevPageHandler = () => {
-  navigate(-1);
+  navigate('/main');
   // setSelectedOption(category);
 }
 
   return (
 
     <div className={classes.container}>
-      <img src={goBack} alt='go back icon' className={classes.img}  onClick={prevPageHandler}/>
+      <img src={process.env.PUBLIC_URL + '/images/arrowTest.svg'} alt='go back icon' className={classes.img}  onClick={prevPageHandler} title='go to the main page'/>
       <div className={classes.category}>
         <h2>Category:</h2>
         <Select options={options}

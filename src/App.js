@@ -10,14 +10,12 @@ import Expenses from './pages/Expenses/Index';
 
 const router = createBrowserRouter([
   { path: '/', element: <HomePage /> },
-  {path: 'main', element: <Main />, loader: checkAuthLoader},
-  {path: 'category/:category', element: <Expenses />},
-])
+  { path: 'main', element: <Main />, loader: checkAuthLoader },
+  { path: 'category/:category', element: <Expenses /> }
+]);
 
 function App() {
-  return (
-    <RouterProvider router={router} />
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;

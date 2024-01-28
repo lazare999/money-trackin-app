@@ -24,5 +24,6 @@
 
 .img {
  /* text-align: left; */
-    width: 2.5em;
+    width: 3em;
+    cursor: pointer;
 }

@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { ref, get } from 'firebase/database';
-import { database } from '../../firebase';
+import { database } from '../../utils/firebase';
 import { useNavigate } from 'react-router-dom'
 
 import PieChart from '../../components/Pie/PieChart/Index';
-import Header from '../../components/Header/Index';
+import Header from '../../components/Header/MainHeader/Index';
 import TableForMainPage from '../../components/Table/TableForMainPage/TableForMainPage';
 
 import classes from './Main.module.css'
@@ -71,10 +71,13 @@ const Main = () => {
   }, [userData]);
 
   const handleCategoryClick = (category) => {
+    // if (userData.transactions && userData.transactions[category]) {
+    //   // setSelectedCategoryData(userData.transactions[category]);
+    //   console.log(userData.transactions[category]);
+    //   console.log(category)
+    //   navigate(`/category/${category}`);
+    // }
     if (userData.transactions && userData.transactions[category]) {
-      // setSelectedCategoryData(userData.transactions[category]);
-      console.log(userData.transactions[category]);
-      console.log(category)
       navigate(`/category/${category}`);
     }
   };
@@ -83,10 +86,10 @@ const Main = () => {
     <div>
       <Header />
       <div className={classes.mainContainer}>
-        <PieChart expendedMoney={expendedMoney} />
+        <PieChart expendedMoney={expendedMoney} handleCategoryClick={handleCategoryClick} />
         <TableForMainPage expendedMoney={expendedMoney} handleCategoryClick={handleCategoryClick} />
       </div>
-      <Footer />
+      <Footer specialStyle />
       {/* <div>
         <h2>Selected Category Data:</h2>
         {selectedCategoryData && (

@@ -287,8 +287,8 @@ button {
 input {
   border: none;
   background-color: transparent;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
+  /* -webkit-box-shadow: none;
+  -moz-box-shadow: none; */
   outline: 0;
 }
 

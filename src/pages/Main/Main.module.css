@@ -2,4 +2,15 @@
     margin: 1em;
     display: flex;
     justify-content: space-around;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 600px) {
+    .mainContainer {
+        margin: 1em;
+        display: flex;
+        justify-content: space-around;
+        overflow: hidden;
+        height: fit-content;
+    }
 }

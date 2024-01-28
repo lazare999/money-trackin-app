@@ -1,7 +1,7 @@
 import React, {  useState }  from 'react';
 import { Link, useSearchParams, useNavigate } from 'react-router-dom';
 import { useForm } from "react-hook-form";
-import { auth } from '../../../firebase';
+import { auth } from '../../../utils/firebase';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from 'yup';

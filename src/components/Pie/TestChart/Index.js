@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import * as echarts from 'echarts';
 
 const TestChart = ({ transactionsDates, transactionsAmounts }) => {
+  
   useEffect(() => {
     const chartDom = document.getElementById('main');
     const myChart = echarts.init(chartDom);

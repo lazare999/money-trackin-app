@@ -1,0 +1,29 @@
+/* Default styles */
+.chartContainer {
+    width: 70%;
+    height: 450px;
+}
+
+/* Styles for screens with a maximum width of 600px */
+@media screen and (max-height: 600px) {
+    .chartContainer {
+        width: 60%;
+        height: 250px;
+    }
+}
+
+/* Styles for screens with a width between 601px and 1024px */
+@media screen and (min-height: 601px) and (max-height: 1024px) {
+    .chartContainer {
+        width: 60%;
+        height: 600px;
+    }
+}
+
+/* Styles for screens with a width greater than 1024px */
+@media screen and (min-height: 1025px) {
+    .chartContainer {
+        width: 60%;
+        height: 850px;
+    }
+}

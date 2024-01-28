@@ -16,10 +16,11 @@
 .img {
     width: 7.2vh;
     height: 7vh;
+    border-radius: 50%;
 }
 
 .background {
-    background-image: url('../../images/background-photo.jpg');
+    background-image: url('../../../public/images/background-photo.jpg');
     /* background-size: cover;
     background-repeat: no-repeat; */
     background-attachment: fixed;

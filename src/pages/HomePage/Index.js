@@ -1,7 +1,7 @@
 import React from 'react'
 import { useSearchParams, redirect } from 'react-router-dom';
 
-import dollarSign from '../../images/dollar-sign.png';
+// import dollarSign from '../../images/dollar-sign.png';
 import SingIn from '../../components/Auth/SignIn/Index';
 import SingUp from '../../components/Auth/SignUp/Index';
 
@@ -16,7 +16,7 @@ const HomePage = () => {
     <div className={classes.background}>
       <div className={classes.headerContainer}>
         <h1 className={classes.homePageHeader}>
-          Money Tracking App <img src={dollarSign} alt="dollar-sign" className={classes.img} />
+          Money Tracking App <img src={process.env.PUBLIC_URL + '/images/dollar-sign.svg'} alt="dollar-sign" className={classes.img} />
         </h1>
         {isLogin ? <SingIn /> : <SingUp />}
       </div>

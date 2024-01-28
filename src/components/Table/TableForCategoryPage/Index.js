@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { ref, get } from 'firebase/database';
-import { database } from '../../../firebase';
+import { database } from '../../../utils/firebase';
 import { useParams } from 'react-router-dom';
 
-import calendar from '../../../images/expensIcons/calendar.png';
-import description from '../../../images/expensIcons/description.png';
-import amount from '../../../images/expensIcons/amount.png';
+// import calendar from '../../../images/expensIcons/calendar.png';
+// import description from '../../../images/expensIcons/description.png';
+// import amount from '../../../images/expensIcons/amount.png';
 
 import classes from './Table.module.css';
 
@@ -47,10 +47,16 @@ const TableForCategoryPage = () => {
     return totalExpense.toFixed(2);
   };
 
+  const images = {
+    calendar: '/images/expensIcons/calendar.svg',
+    description: '/images/expensIcons/description.svg',
+    amount: '/images/expensIcons/amount.svg',
+  }
+
   const categoryIcons = {
-    calendar,
-    description,
-    amount
+    calendar: images.calendar,
+    description: images.description,
+    amount: images.amount,
   }
 
   if (category === 'transactions') {
@@ -68,14 +74,14 @@ const TableForCategoryPage = () => {
                     <th>{`${calculateTotalExpense(category)}$`}</th>
                   </tr>
                   <tr>
-                    <th> {categoryIcons['calendar'] && (
+                    <th className={classes.thForIcons}> {categoryIcons['calendar'] && (
                       <img src={categoryIcons['calendar']} alt="Date icon" className={classes.icons} />
                     )}
                       Date</th>
-                    <th>{categoryIcons['amount'] && (
+                    <th className={classes.thForIcons}>{categoryIcons['amount'] && (
                       <img src={categoryIcons['amount']} alt="amount icon" className={classes.icons} />
                     )}Amount</th>
-                    <th>{categoryIcons['description'] && (
+                    <th className={classes.thForIcons}>{categoryIcons['description'] && (
                       <img src={categoryIcons['description']} alt="description icon" className={classes.icons} />
                     )}Description</th>
                   </tr>
@@ -114,14 +120,14 @@ const TableForCategoryPage = () => {
                   <th>{`${calculateTotalExpense(category)}$`}</th>
                 </tr>
                 <tr>
-                  <th> {categoryIcons['calendar'] && (
+                  <th className={classes.thForIcons}> {categoryIcons['calendar'] && (
                     <img src={categoryIcons['calendar']} alt="Date icon" className={classes.icons} />
                   )}
                     Date</th>
-                  <th>{categoryIcons['amount'] && (
+                  <th className={classes.thForIcons}>{categoryIcons['amount'] && (
                     <img src={categoryIcons['amount']} alt="amount icon" className={classes.icons} />
                   )}Amount</th>
-                  <th>{categoryIcons['description'] && (
+                  <th className={classes.thForIcons}>{categoryIcons['description'] && (
                     <img src={categoryIcons['description']} alt="description icon" className={classes.icons} />
                   )}Description</th>
                 </tr>
